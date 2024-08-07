@@ -1,0 +1,95 @@
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #282c34;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* General styles for search input and button */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: width 0.4s ease-in-out, padding 0.4s ease-in-out;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-input.open {
+    width: 250px;
+    padding: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-button {
+    background-color: #ff5722;
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px; /* Adjust if needed */
+    width: 60px; /* Ensures the button is circular */
+    height: 60px; /* Ensure this is equal to width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0; /* Remove padding to maintain circular shape */
+}
+
+.search-button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+.search-container i {
+    color: #fff;
+    font-size: 24px; /* Adjust if needed */
+}
+
+.cta-button {
+    background-color: #ff5722;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}

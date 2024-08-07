@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.flexItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; /* Adjust spacing between cards */
+}
+
+/* ItemCard Styles */
+.responsive {
+  position: relative; /* Ensure relative positioning for absolute children */
+  width: 300px; /* Adjust width of each card */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery img {
+  width:  -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.gallery h2 {
+  margin-top: 10px;
+  color: #333333;
+}
+
+.gallery p {
+  margin: 10px 0;
+  color: #666666;
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  right: 10px; /* Adjust right position as needed */
+  cursor: pointer;
+  width: 30px; /* Adjust size of the favorite button */
+  height: 30px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.favoriteButton.active {
+  color: red; /* Color when active (favorite) */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add spacing between quantity and buttons */
+}
+
+.quantity input {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #975050;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin-top: 5px; /* Add spacing between buttons */
+}
+
+.buttons button:hover {
+  background-color: #7b3e3e;
+}
+
+.increment, .decrement {
+  background-color: #975050;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.increment:hover, .decrement:hover {
+  background-color: #7b3e3e;
+}
